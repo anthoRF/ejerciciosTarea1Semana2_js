@@ -8,6 +8,7 @@
     ENTRADA:
         numeroMaterias (leer) = 0
         materias (arreglo) (asignar) = []
+        materiasLargas (arreglo) (asignar) = []
         i (asignar) = 0
 
     PROCESO:
@@ -18,12 +19,12 @@
 
         para i desde 0 hasta longitud(materias)-1 hacer
             si longitud(materias[i]) > 5 entonces
-                mostrar materias[i]
+                agregar materias[i] a materiasLargas
             fin si
         fin para
 
     SALIDA:
-        Todas las materias con más de 5 caracteres
+        Escribir materiasLargas
 */
 
 const prompt = require("prompt-sync")();

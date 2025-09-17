@@ -1,28 +1,32 @@
 // 42. Áreas de varios triángulos 
 // Leer 10 triángulos (base y altura) y calcular su área únicamente si ambos valores son 
-// positivos. 
+// positivos.  
 // ● Entrada: [(10,5), (8,-2)] 
 // ● Salida: 25, “inválido”
 
 /*
     ENTRADA:
-        base, altura (leer)
+        base (leer) = 0
+        altura (leer) = 0
         areasTriangulos (asignar) = []
+        i (asignar) = 1
 
     PROCESO:
-        para i = 1 hasta 10 hacer
+        mientras i <= 10 hacer
             leer base
             leer altura
             si base > 0 y altura > 0 entonces
-                area = (base * altura) / 2
+                area (asignar) = (base * altura) / 2
                 agregar area a areasTriangulos
             sino
                 agregar "inválido" a areasTriangulos
             fin si
-        fin para
+            i (asignar) = i + 1
+        fin mientras
 
     SALIDA:
         Escribir areasTriangulos
+
 */
 
 const prompt = require("prompt-sync")();
@@ -34,7 +38,7 @@ function areasTriangulos() {
         const base = parseFloat(prompt('Ingrese la base: '));
         const altura = parseFloat(prompt('Ingrese la altura: '));
 
-        if ((base && altura) > 0) {
+        if (base > 0 && altura > 0) {
             let areaTriangulo = (base * altura) / 2;
             console.log('El area es: ', areaTriangulo);
         } else {

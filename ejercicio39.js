@@ -13,7 +13,7 @@
 
     PROCESO:
         leer numeroPrecios
-        para i desde 0 hasta numeroPrecios-1 hacer
+        mientras i < numeroPrecios hacer
             leer precios[i]
             precioConIva (asignar) = precios[i] + (precios[i] * 0.15)
             si precios[i] > 10 entonces
@@ -21,11 +21,12 @@
             sino
                 preciosFinales[i] (asignar) = precioConIva
             fin si
-        fin para
+            i (asignar) = i + 1
+        fin mientras
 
     SALIDA:
         Escribir preciosFinales
-*/
+*/  
 
 const prompt = require("prompt-sync") ();
 

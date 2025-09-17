@@ -31,13 +31,13 @@ function notasAprobadasArray(){
     let notasMayores70 = 0;
 
     for (let i = 0; i < numNotas; i++) {
-        notas[i] = (parseFloat(prompt(`Ingrese la nota ${i+1}: `)));
+        notas[i] = parseFloat(prompt(`Ingrese la nota ${i+1}: `));
 
         if (notas[i] >= 70) {
             notasMayores70++;
         }
     }
-    console.log(`${notasMayores70} notas son >= 70`)
+    console.log(`${notasMayores70} notas son >= 70`);
 }
 
 notasAprobadasArray();

@@ -6,22 +6,26 @@
 
 /*
     ENTRADA:
-        sueldo (leer)
+        numeroSueldos (leer) = 0
+        sueldo (leer) = 0
         resultadosSueldos (asignar) = []
+        i (asignar) = 1
 
     PROCESO:
-        para i = 1 hasta n hacer
+        leer numeroSueldos
+        mientras i <= numeroSueldos hacer
             leer sueldo
-            aporteIESS = sueldo * 0.0945
+            aporteIESS (asignar) = sueldo * 0.0945
             si sueldo < 450 entonces
-                subsidio = 50
+                subsidio (asignar) = 50
             sino si sueldo >= 700 y sueldo <= 999 entonces
-                subsidio = 20
+                subsidio (asignar) = 20
             sino
-                subsidio = 0
+                subsidio (asignar) = 0
             fin si
-            agregar [aporteIESS, subsidio] a resultadosSueldos
-        fin para
+            agregar (aporteIESS, subsidio) a resultadosSueldos
+            i (asignar) = i + 1
+        fin mientras
 
     SALIDA:
         Escribir resultadosSueldos
@@ -29,23 +33,25 @@
 
 const prompt = require("prompt-sync")();
 
-function sueldosConAporteIEES() {
+function sueldosConAporteIESS() {
     let i = 1;
+    let subsidio = 0;
     const numeroSueldos = parseInt(prompt('Numero de sueldos ha ingresar: '));
 
     while (i < numeroSueldos + 1) {
         let sueldo = parseFloat(prompt(`Ingrese el sueldo ${i}: `));
-        let aporteIESS = (sueldo * 0.0945)
+        let aporteIESS = (sueldo * 0.0945);
 
         if (sueldo < 450) {
-            console.log(`Su aporte al IEES es: ${aporteIESS} + subsidio: $50`);
+            subsidio = 50;
         } else if (sueldo >= 700 && sueldo <= 999) {
-            console.log(`Su aporte al IEES es: ${aporteIESS} + subsidio: $20`);
+            subsidio = 20;
         } else {
-            console.log(`Su aporte al IEES es: ${aporteIESS}`);
+            subsidio = 0;
         }
+        console.log(`Su aporte al IESS es: ${aporteIESS} + subsidio: $${subsidio}`);
         i++
     }
 }
 
-sueldosConAporteIEES();
+sueldosConAporteIESS();

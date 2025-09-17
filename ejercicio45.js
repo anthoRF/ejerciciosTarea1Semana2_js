@@ -13,10 +13,15 @@
         nota4 (leer) = 0
         promedio (asignar) = 0
         resultado (asignar) = ""
+        resultadosEstudiantes (asignar) = []
 
     PROCESO:
         mientras i <= 5 hacer
-            leer nota1, nota2, nota3, nota4
+            leer nota1
+            leer nota2
+            leer nota3
+            leer nota4
+
             promedio (asignar) = (nota1 + nota2 + nota3 + nota4) / 4
 
             si promedio >= 70 entonces
@@ -27,15 +32,12 @@
                 resultado (asignar) = "Reprueba"
             fin si
 
-            escribir "Est" + i + "=" + promedio + " " + resultado
+            agregar ("Est" + i + "=" + promedio + " " + resultado) a resultadosEstudiantes
             i (asignar) = i + 1
         fin mientras
 
     SALIDA:
-        "Est1=<promedio> <clasificación>"
-        "Est2=<promedio> <clasificación>"
-        ...
-        hasta Est5
+        Escribir resultadosEstudiantes
 */
 
 const prompt = require("prompt-sync")();

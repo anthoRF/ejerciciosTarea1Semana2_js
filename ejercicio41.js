@@ -4,30 +4,27 @@
 // ● Entrada: [40, 60] 
 // ● Salida: [46, 58.65] 
 
-// 41. IVA y descuento según precio (varios) 
-// Leer n precios. Si el precio >50 aplicar IVA del 15% y descuento del 20%. Caso 
-// contrario aplicar solo IVA del 15%. 
-// ● Entrada: [40, 60] 
-// ● Salida: [46, 58.65]
-
 /*
-    ENTRADA: 
+    ENTRADA:
         numeroPrecios (leer) = 0
-        precio (leer) = 0
-        preciosFinales (asignar) = []
+        precios (arreglo) (asignar) = []
+        preciosFinales (arreglo) (asignar) = []
+        i (asignar) = 0
 
     PROCESO:
         leer numeroPrecios
-        para i = 1 hasta numeroPrecios hacer
-            leer precio
-            precioConIva = precio + (precio * 0.15)
-            si precio > 50 entonces
-                precioConIva = precioConIva - (precioConIva * 0.20)
+        mientras i < numeroPrecios hacer
+            leer precios[i]
+            precioConIva (asignar) = precios[i] + (precios[i] * 0.15)
+            si precios[i] > 50 entonces
+                preciosFinales[i] (asignar) = precioConIva - (precioConIva * 0.20)
+            sino
+                preciosFinales[i] (asignar) = precioConIva
             fin si
-            agregar precioConIva a preciosFinales
-        fin para
+            i (asignar) = i + 1
+        fin mientras
 
-    SALIDA: 
+    SALIDA:
         Escribir preciosFinales
 */
 

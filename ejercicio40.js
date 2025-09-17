@@ -4,21 +4,27 @@
 // ● Salida: [80, 135] 
 
 /*
-    ENTRADA: 
+    ENTRADA:
         numeroPrecios (leer) = 0
         precio (leer) = 0
-        preciosFinales (asignar) = []
+        precios (arreglo) (asignar) = []
+        preciosFinales (arreglo) (asignar) = []
+        i (asignar) = 0
 
     PROCESO:
         leer numeroPrecios
-        para i = 1 hasta numeroPrecios hacer
+        mientras i < numeroPrecios hacer
             leer precio
             si precio >= 100 entonces
-                precio = precio - (precio * 0.10)
-            agregar precio a preciosFinales
-        fin para
+                precioConDescuento (asignar) = precio - (precio * 0.10)
+                preciosFinales[i] (asignar) = precioConDescuento
+            sino
+                preciosFinales[i] (asignar) = precio
+            fin si
+            i (asignar) = i + 1
+        fin mientras
 
-    SALIDA: 
+    SALIDA:
         Escribir preciosFinales
 */
 

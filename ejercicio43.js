@@ -5,20 +5,24 @@
 
 /*
     ENTRADA:
-        radio (leer)
+        numeroRadios (leer) = 0
+        radio (leer) = 0
         resultadosCirculos (asignar) = []
+        i (asignar) = 1
 
     PROCESO:
-        para i = 1 hasta n hacer
+        leer numeroRadios
+        mientras i <= numeroRadios hacer
             leer radio
             si radio > 0 entonces
-                area = PI * radio^2
-                perimetro = 2 * PI * radio
+                area (asignar) = PI * radio^2
+                perimetro (asignar) = 2 * PI * radio
                 agregar [area, perimetro] a resultadosCirculos
             sino
                 agregar "inválido" a resultadosCirculos
             fin si
-        fin para
+            i (asignar) = i + 1
+        fin mientras
 
     SALIDA:
         Escribir resultadosCirculos
