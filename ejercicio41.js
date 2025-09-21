@@ -15,13 +15,13 @@
         leer numeroPrecios
         mientras i < numeroPrecios hacer
             leer precios[i]
-            precioConIva (asignar) = precios[i] + (precios[i] * 0.15)
+            precioConIva = precios[i] + (precios[i] * 0.15)
             si precios[i] > 50 entonces
-                preciosFinales[i] (asignar) = precioConIva - (precioConIva * 0.20)
+                preciosFinales[i] = precioConIva - (precioConIva * 0.20)
             sino
-                preciosFinales[i] (asignar) = precioConIva
+                preciosFinales[i] = precioConIva
             fin si
-            i (asignar) = i + 1
+            i = i + 1
         fin mientras
 
     SALIDA:

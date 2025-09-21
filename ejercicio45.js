@@ -33,7 +33,7 @@
             fin si
 
             agregar ("Est" + i + "=" + promedio + " " + resultado) a resultadosEstudiantes
-            i (asignar) = i + 1
+            i = i + 1
         fin mientras
 
     SALIDA:

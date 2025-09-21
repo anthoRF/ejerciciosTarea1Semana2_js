@@ -14,7 +14,7 @@
         para i desde 0 hasta numPrecios-1 hacer
             leer precios[i]
             si precios[i] > 200 entonces
-                precios[i] (asignar) = precios[i] - (precios[i] * 0.20)
+                precios[i] = precios[i] - (precios[i] * 0.20)
             fin si
         fin para
 

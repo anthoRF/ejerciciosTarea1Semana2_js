@@ -15,7 +15,7 @@
         para i desde 0 hasta numNotas-1 hacer
             leer notas[i]
             si notas[i] ≥ 70 entonces
-                notasMayores70 (asignar) = notasMayores70 + 1
+                notasMayores70 = notasMayores70 + 1
             fin si
         fin para
 

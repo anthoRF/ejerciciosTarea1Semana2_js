@@ -15,7 +15,7 @@
         para i desde 0 hasta numNombres-1 hacer
             leer nombres[i]
             si nombres[i] = "" entonces
-                nombresVacios (asignar) = nombresVacios + 1
+                nombresVacios = nombresVacios + 1
             fin si
         fin para
 

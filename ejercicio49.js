@@ -15,7 +15,7 @@
         para i desde 0 hasta numSueldos-1 hacer
             leer sueldos[i]
             si sueldos[i] < 450 entonces
-                sueldosMenores (asignar) = sueldosMenores + 1
+                sueldosMenores = sueldosMenores + 1
             fin si
         fin para
 

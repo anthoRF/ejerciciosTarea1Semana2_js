@@ -15,13 +15,13 @@
     PROCESO:
         mientras i ≤ 5 hacer
             leer numero1, numero2, numero3
-            promedio (asignar) = (numero1 + numero2 + numero3) / 3
+            promedio = (numero1 + numero2 + numero3) / 3
             si promedio > 10 entonces
-                resultados[i] (asignar) = "Promedio=" + promedio + " >10"
+                resultados[i] = "Promedio=" + promedio + " >10"
             sino
-                resultados[i] (asignar) = "Promedio=" + promedio + " ≤10"
+                resultados[i] = "Promedio=" + promedio + " ≤10"
             fin si
-            i (asignar) = i + 1
+            i = i + 1
         fin mientras
 
     SALIDA:

@@ -16,12 +16,12 @@
             leer base
             leer altura
             si base > 0 y altura > 0 entonces
-                area (asignar) = (base * altura) / 2
+                area = (base * altura) / 2
                 agregar area a areasTriangulos
             sino
                 agregar "inválido" a areasTriangulos
             fin si
-            i (asignar) = i + 1
+            i = i + 1
         fin mientras
 
     SALIDA:

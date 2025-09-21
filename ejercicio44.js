@@ -24,7 +24,7 @@
                 subsidio (asignar) = 0
             fin si
             agregar (aporteIESS, subsidio) a resultadosSueldos
-            i (asignar) = i + 1
+            i = i + 1
         fin mientras
 
     SALIDA:

@@ -14,11 +14,11 @@
         mientras i < 10 hacer
             leer numero1, numero2
             si numero1 > numero2 entonces
-                resultados[i] (asignar) = "Mayor=" + numero1
+                resultados[i]  = "Mayor=" + numero1
             sino
-                resultados[i] (asignar) = "Mayor=" + numero2
+                resultados[i]  = "Mayor=" + numero2
             fin si
-            i (asignar) = i + 1
+            i = i + 1
         fin mientras
 
     SALIDA:

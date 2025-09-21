@@ -16,12 +16,12 @@
         mientras i < numeroPrecios hacer
             leer precio
             si precio >= 100 entonces
-                precioConDescuento (asignar) = precio - (precio * 0.10)
-                preciosFinales[i] (asignar) = precioConDescuento
+                precioConDescuento  = precio - (precio * 0.10)
+                preciosFinales[i] = precioConDescuento
             sino
-                preciosFinales[i] (asignar) = precio
+                preciosFinales[i]  = precio
             fin si
-            i (asignar) = i + 1
+            i = i + 1
         fin mientras
 
     SALIDA:
